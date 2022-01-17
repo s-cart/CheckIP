@@ -3,7 +3,7 @@
 
 namespace App\Plugins\Other\CheckIP\Admin;
 
-use App\Http\Controllers\RootAdminController;
+use SCart\Core\Admin\Controllers\RootAdminController;
 use App\Plugins\Other\CheckIP\AppConfig;
 use App\Plugins\Other\CheckIP\Models\CheckIPAccess;
 use Validator;
