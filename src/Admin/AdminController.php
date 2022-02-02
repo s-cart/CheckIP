@@ -117,6 +117,7 @@ class AdminController extends RootAdminController
             'description' => $data['description'],
             'type' => $data['type'],
         ];
+        $dataInsert = sc_clean($dataInsert, [], true);
         $obj = CheckIPAccess::create($dataInsert);
 
         return redirect()->route('admin_checkip.edit', ['id' => $obj['id']])->with('success', sc_language_render('action.create_success'));
@@ -224,10 +225,10 @@ class AdminController extends RootAdminController
             'description' => $data['description'],
             'type' => $data['type'],
         ];
-
+        $dataUpdate = sc_clean($dataUpdate, [], true);
         $obj->update($dataUpdate);
 
-    //
+    
         return redirect()->back()->with('success', sc_language_render('action.edit_success'));
     }
 
