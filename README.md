@@ -1,3 +1,11 @@
+##========= History =========
+
+Version 2.x support S-Cart 6.x
+
+Version 3.x support S-Cart 7.x
+
+##========= Install =========
+
 ##Step1:
 
 Import plugin : https://s-cart.org/en/docs/6.2/how-to-install-module-extension.html#install-plugin-import 
